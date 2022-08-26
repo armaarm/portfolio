@@ -1,0 +1,98 @@
+[debug] [2022-08-26T10:49:48.535Z] ----------------------------------------------------------------------
+[debug] [2022-08-26T10:49:48.538Z] Command:       /usr/local/bin/firebase /Users/armn/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-08-26T10:49:48.540Z] CLI Version:   11.7.0
+[debug] [2022-08-26T10:49:48.540Z] Platform:      darwin
+[debug] [2022-08-26T10:49:48.540Z] Node Version:  v16.16.0
+[debug] [2022-08-26T10:49:48.541Z] Time:          Fri Aug 26 2022 17:49:48 GMT+0700 (Indochina Time)
+[debug] [2022-08-26T10:49:48.541Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-26T10:49:48.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-26T10:49:48.622Z] > authorizing via signed-in user (sarun.atc@gmail.com)
+[debug] [2022-08-26T10:49:48.622Z] [iam] checking project portfolio-3873b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-26T10:49:48.626Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-3873b:testIamPermissions [none]
+[debug] [2022-08-26T10:49:48.626Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-3873b:testIamPermissions x-goog-quota-user=projects/portfolio-3873b
+[debug] [2022-08-26T10:49:48.626Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-3873b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-26T10:49:50.288Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-3873b:testIamPermissions 200
+[debug] [2022-08-26T10:49:50.288Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-3873b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-26T10:49:50.289Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-3873b [none]
+[debug] [2022-08-26T10:49:51.039Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-3873b 200
+[debug] [2022-08-26T10:49:51.040Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-3873b {"projectId":"portfolio-3873b","projectNumber":"471809718287","displayName":"portfolio","name":"projects/portfolio-3873b","resources":{"hostingSite":"portfolio-3873b"},"state":"ACTIVE","etag":"1_df64f765-6857-4e95-9360-e8003db539be"}
+[info] 
+[info] === Deploying to 'portfolio-3873b'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-26T10:49:51.042Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-3873b [none]
+[debug] [2022-08-26T10:49:51.747Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-3873b 200
+[debug] [2022-08-26T10:49:51.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-3873b {"projectId":"portfolio-3873b","projectNumber":"471809718287","displayName":"portfolio","name":"projects/portfolio-3873b","resources":{"hostingSite":"portfolio-3873b"},"state":"ACTIVE","etag":"1_df64f765-6857-4e95-9360-e8003db539be"}
+[debug] [2022-08-26T10:49:51.749Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions [none]
+[debug] [2022-08-26T10:49:51.749Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-26T10:49:53.597Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions 200
+[debug] [2022-08-26T10:49:53.597Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions {"name":"projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[portfolio-3873b]: beginning deploy... 
+[info] i  hosting[portfolio-3873b]: found 6 files in public 
+[debug] [2022-08-26T10:49:53.609Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-26T10:49:53.610Z] [hosting] hash cache [cHVibGlj] not populated
+[debug] [2022-08-26T10:49:53.662Z] [hosting] hash cache [cHVibGlj] stored for 6 files
+[debug] [2022-08-26T10:49:53.663Z] [hosting][hash queue][FINAL] {"max":42,"min":9,"avg":15.833333333333334,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":49}
+[debug] [2022-08-26T10:49:53.671Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132:populateFiles [none]
+[debug] [2022-08-26T10:49:53.671Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132:populateFiles {"files":{"/404.html":"05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3","/index.html":"ea3df5e4518b1c3ae25e38c2ed88649a42297a486a60e269043cceff2da5a003","/logo-pic.jpg":"128908e28674050661273608c1e076af9273e8bfe9e05e1fce4648903faec571","/robots.txt":"51e8dcebd71915aeb9884610b1cb7d68b19b5a56c0d7f4f25ef83e5478ed1958","/sitemap.xml":"653b854cecc6cf39f919099ec600e5e930744a639ed8fdcefd5e17f44c7b0d8a","/portfolio.png":"01cb60a351066e014644db2811e3aa146306795e07784a7333df7014856abeee"}}
+[debug] [2022-08-26T10:49:54.549Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132:populateFiles 200
+[debug] [2022-08-26T10:49:54.549Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132:populateFiles {"uploadRequiredHashes":["01cb60a351066e014644db2811e3aa146306795e07784a7333df7014856abeee","05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3","ea3df5e4518b1c3ae25e38c2ed88649a42297a486a60e269043cceff2da5a003","128908e28674050661273608c1e076af9273e8bfe9e05e1fce4648903faec571","51e8dcebd71915aeb9884610b1cb7d68b19b5a56c0d7f4f25ef83e5478ed1958","653b854cecc6cf39f919099ec600e5e930744a639ed8fdcefd5e17f44c7b0d8a"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files"}
+[debug] [2022-08-26T10:49:54.551Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/01cb60a351066e014644db2811e3aa146306795e07784a7333df7014856abeee [none]
+[debug] [2022-08-26T10:49:54.551Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/01cb60a351066e014644db2811e3aa146306795e07784a7333df7014856abeee [stream]
+[debug] [2022-08-26T10:49:54.552Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3 [none]
+[debug] [2022-08-26T10:49:54.552Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3 [stream]
+[debug] [2022-08-26T10:49:54.553Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/ea3df5e4518b1c3ae25e38c2ed88649a42297a486a60e269043cceff2da5a003 [none]
+[debug] [2022-08-26T10:49:54.554Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/ea3df5e4518b1c3ae25e38c2ed88649a42297a486a60e269043cceff2da5a003 [stream]
+[debug] [2022-08-26T10:49:54.555Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/128908e28674050661273608c1e076af9273e8bfe9e05e1fce4648903faec571 [none]
+[debug] [2022-08-26T10:49:54.555Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/128908e28674050661273608c1e076af9273e8bfe9e05e1fce4648903faec571 [stream]
+[debug] [2022-08-26T10:49:54.557Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/51e8dcebd71915aeb9884610b1cb7d68b19b5a56c0d7f4f25ef83e5478ed1958 [none]
+[debug] [2022-08-26T10:49:54.557Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/51e8dcebd71915aeb9884610b1cb7d68b19b5a56c0d7f4f25ef83e5478ed1958 [stream]
+[debug] [2022-08-26T10:49:54.558Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/653b854cecc6cf39f919099ec600e5e930744a639ed8fdcefd5e17f44c7b0d8a [none]
+[debug] [2022-08-26T10:49:54.558Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/653b854cecc6cf39f919099ec600e5e930744a639ed8fdcefd5e17f44c7b0d8a [stream]
+[debug] [2022-08-26T10:49:54.559Z] [hosting][populate queue][FINAL] {"max":890,"min":890,"avg":890,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":898}
+[debug] [2022-08-26T10:49:54.559Z] [hosting] uploads queued: 6
+[debug] [2022-08-26T10:49:56.715Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/ea3df5e4518b1c3ae25e38c2ed88649a42297a486a60e269043cceff2da5a003 200
+[debug] [2022-08-26T10:49:56.715Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/ea3df5e4518b1c3ae25e38c2ed88649a42297a486a60e269043cceff2da5a003 [stream]
+[debug] [2022-08-26T10:49:57.228Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/128908e28674050661273608c1e076af9273e8bfe9e05e1fce4648903faec571 200
+[debug] [2022-08-26T10:49:57.228Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/128908e28674050661273608c1e076af9273e8bfe9e05e1fce4648903faec571 [stream]
+[debug] [2022-08-26T10:49:57.484Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/653b854cecc6cf39f919099ec600e5e930744a639ed8fdcefd5e17f44c7b0d8a 200
+[debug] [2022-08-26T10:49:57.484Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/653b854cecc6cf39f919099ec600e5e930744a639ed8fdcefd5e17f44c7b0d8a [stream]
+[debug] [2022-08-26T10:49:57.622Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/01cb60a351066e014644db2811e3aa146306795e07784a7333df7014856abeee 200
+[debug] [2022-08-26T10:49:57.622Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/01cb60a351066e014644db2811e3aa146306795e07784a7333df7014856abeee [stream]
+[debug] [2022-08-26T10:49:57.807Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3 200
+[debug] [2022-08-26T10:49:57.807Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/05cbc6f94d7a69ce2e29646eab13be2c884e61ba93e3094df5028866876d18b3 [stream]
+[debug] [2022-08-26T10:49:57.946Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/51e8dcebd71915aeb9884610b1cb7d68b19b5a56c0d7f4f25ef83e5478ed1958 200
+[debug] [2022-08-26T10:49:57.946Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-3873b/versions/467a42d8d86f7132/files/51e8dcebd71915aeb9884610b1cb7d68b19b5a56c0d7f4f25ef83e5478ed1958 [stream]
+[debug] [2022-08-26T10:49:57.946Z] [hosting][upload queue][FINAL] {"max":3396,"min":2165,"avg":2917.5,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":3397}
+[info] ✔  hosting[portfolio-3873b]: file upload complete 
+[debug] [2022-08-26T10:49:57.948Z] [hosting] deploy completed after 4349ms
+[debug] [2022-08-26T10:49:57.952Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "portfolio-3873b"
+    },
+    "site": "portfolio-3873b",
+    "version": "projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132"
+  }
+]
+[info] i  hosting[portfolio-3873b]: finalizing version... 
+[debug] [2022-08-26T10:49:57.953Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132 updateMask=status%2Cconfig
+[debug] [2022-08-26T10:49:57.953Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132 {"status":"FINALIZED","config":{}}
+[debug] [2022-08-26T10:49:59.026Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132 200
+[debug] [2022-08-26T10:49:59.026Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132 {"name":"projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-26T10:49:52.805331Z","createUser":{"email":"sarun.atc@gmail.com"},"finalizeTime":"2022-08-26T10:49:58.957923Z","finalizeUser":{"email":"sarun.atc@gmail.com"}}
+[debug] [2022-08-26T10:49:59.026Z] [hosting] finalized version for portfolio-3873b:[object Object]
+[info] ✔  hosting[portfolio-3873b]: version finalized 
+[info] i  hosting[portfolio-3873b]: releasing new version... 
+[debug] [2022-08-26T10:49:59.027Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/releases versionName=projects%2F471809718287%2Fsites%2Fportfolio-3873b%2Fversions%2F467a42d8d86f7132
+[debug] [2022-08-26T10:49:59.027Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/releases {"message":null}
+[debug] [2022-08-26T10:50:00.131Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/releases 200
+[debug] [2022-08-26T10:50:00.131Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/471809718287/sites/portfolio-3873b/releases {"name":"projects/471809718287/sites/portfolio-3873b/releases/1661510999415700","version":{"name":"projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-26T10:49:52.805331Z","createUser":{"email":"sarun.atc@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlywi8wLqacg2SX-TNK0EkdTB6ubJfr4RwCdNQ4=mo"},"finalizeTime":"2022-08-26T10:49:58.957923Z","finalizeUser":{"email":"sarun.atc@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlywi8wLqacg2SX-TNK0EkdTB6ubJfr4RwCdNQ4=mo"}},"type":"DEPLOY","releaseTime":"2022-08-26T10:49:59.415700435Z","releaseUser":{"email":"sarun.atc@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlywi8wLqacg2SX-TNK0EkdTB6ubJfr4RwCdNQ4=mo"}}
+[debug] [2022-08-26T10:50:00.131Z] [hosting] release: {"name":"projects/471809718287/sites/portfolio-3873b/releases/1661510999415700","version":{"name":"projects/471809718287/sites/portfolio-3873b/versions/467a42d8d86f7132","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-08-26T10:49:52.805331Z","createUser":{"email":"sarun.atc@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlywi8wLqacg2SX-TNK0EkdTB6ubJfr4RwCdNQ4=mo"},"finalizeTime":"2022-08-26T10:49:58.957923Z","finalizeUser":{"email":"sarun.atc@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlywi8wLqacg2SX-TNK0EkdTB6ubJfr4RwCdNQ4=mo"}},"type":"DEPLOY","releaseTime":"2022-08-26T10:49:59.415700435Z","releaseUser":{"email":"sarun.atc@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AItbvmlywi8wLqacg2SX-TNK0EkdTB6ubJfr4RwCdNQ4=mo"}}
+[info] ✔  hosting[portfolio-3873b]: release complete 
