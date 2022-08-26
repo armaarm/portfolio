@@ -8,7 +8,7 @@ function Footer() {
       <footer>
         <div className="container">
           <div className="col-sm-5 copyright">
-            <p>Tel : +669 8283 026</p>
+            <p>Tel : +669 8283 0263</p>
             <p>Email : sarun.ngamp@gmail.com</p>
           </div>
           <div className="col-sm-2 top">
