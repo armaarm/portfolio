@@ -59,7 +59,7 @@ function Projects() {
                 />
               </div>
               <div className="project-info">
-                <h3>ENERSERVESOLUTIONS's company website</h3>
+                <h3>ATCPOWER's company website</h3>
                 <p>
                   The singlepage website that using html and css to show company
                   details contain with company's service , project , contact
@@ -97,7 +97,7 @@ function Projects() {
                 />
               </div>
               <div className="project-info">
-                <h3>ATCPOWER's company website</h3>
+                <h3>ENERSERVESOLUTIONS's company website</h3>
                 <p>
                   The singlepage website that using html and css to show company
                   details contain with company's service , project , contact
