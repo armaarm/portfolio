@@ -123,7 +123,6 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {" "}
                   View Project Site
                 </a>
               </div>
