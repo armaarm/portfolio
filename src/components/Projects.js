@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faDesktop } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import activecon from "../images/activecon.png"
+import atcpower from "../images/atcpower.png";
+import enerserve from "../images/enerserve.png";
 
 function Projects() {
     return (
@@ -15,7 +18,7 @@ function Projects() {
                 <img
                   alt="san jose state university campus"
                   draggable="false"
-                  src={require("../images/activecon.png")}
+                  src={activecon}
                   width="300"
                   height="50%"
                 />
@@ -53,7 +56,7 @@ function Projects() {
                 <img
                   alt="digedogesj crypto pool"
                   draggable="false"
-                  src={require("../images/enerserve.png")}
+                  src={atcpower}
                   width="300"
                   height="50%"
                 />
@@ -91,7 +94,7 @@ function Projects() {
                 <img
                   alt="gratition"
                   draggable="false"
-                  src={require("../images/atcpower.png")}
+                  src={enerserve}
                   width="300"
                   height="50%"
                 />
