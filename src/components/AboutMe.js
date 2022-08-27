@@ -6,8 +6,8 @@ function AboutMe() {
       <div id="about">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
-              <h2 className="heading">
+            <div className="col-md-4 text-center">
+              <h2 className="heading text-center">
                 <FontAwesomeIcon icon={faUser} /> About Me
                 <br></br>
                 <img
