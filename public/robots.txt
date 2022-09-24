@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://javab3ans.github.io/portfolio/sitemap.xml
